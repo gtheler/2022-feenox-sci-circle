@@ -1,7 +1,5 @@
 ---
-title: |
- | A free and open source computational tool
- | for solving differential equations in the cloud
+title: FeenoX, a cloud-first free and open source finite-element(ish) tool
 author: Jeremy Theler
 email: jeremy@seamplex.com
 aspectratio: 169
