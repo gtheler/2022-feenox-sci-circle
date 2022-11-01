@@ -15,8 +15,39 @@ header-includes: \include{syntax-feenox.tex}\include{syntax.tex}
 ...
 
 
+## 
 
- 
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+
+![](feenox-console.png)
+
+ - The last X makes it rhyme with **Unix** and Linux.
+ - “noX” means that there is no graphical (i.e. X) interface
+ - Fee-no means that there are no fees involved (free as in “free beer”)
+ - FeenoX is the successor of the now-superseded FEA program Fino
+ - With some luck one can read nite ElEments NO-X”
+ - With mode luck, “FrEE” (as in “free speech”)
+
+:::
+
+::: {.column width="40%"}
+
+ * cloud-first ($\neq$ cloud-friendly)
+   - cloud $=$ somebody else’s computer(s)
+ * free & open source ($\neq$ gratis)
+   - free $\simeq$ open source
+   - it is not about **price**!
+   - free is about **freedom**
+   - open is about **transparency**
+ * finite-element(ish)
+   - PDEs with FEM & FVM 
+   - ODEs with IMEX
+   - generic math problems
+ * computational engineering tool
+   - the right tool for the right problem, right?
+:::
+::::::::::::::
 
 ## How do we write papers/reports/documents?
 
@@ -54,8 +85,8 @@ header-includes: \include{syntax-feenox.tex}\include{syntax.tex}
  Traceability           | \onslide<1->{\bad}     |   \onslide<3->{\neutral} |  \onslide<4->{\good}             |  \onslide<2->{\good}
  Mobile-friendliness    | \onslide<1->{\bad}     |   \onslide<3->{\good}    |  \onslide<4->{\good}             |  \onslide<2->{\bad}
  Collaborative          | \onslide<1->{\bad}     |   \onslide<3->{\good}    |  \onslide<4->{\good}             |  \onslide<2->{\neutral}
- Licensing/openness     | \onslide<1->{\bad}     |   \onslide<3->{\bad}     |  \onslide<4->{\good}             |  \onslide<2->{\good}
- Non-nerd friendliness  | \onslide<1->{\good}    |   \onslide<3->{\good}    |  \onslide<4->{\neutral}          |  \onslide<2->{\bad}
+ Openness     | \onslide<1->{\bad}     |   \onslide<3->{\bad}     |  \onslide<4->{\good}             |  \onslide<2->{\good}
+ Friendliness  | \onslide<1->{\good}    |   \onslide<3->{\good}    |  \onslide<4->{\neutral}          |  \onslide<2->{\bad}
 
 \onslide<4->{\centering $^*$ \href{https://en.wikipedia.org/wiki/Markdown}{Markdown} +
 \href{https://pandoc.org/}{Pandoc} + \href{https://git-scm.com/}{Git} +
@@ -91,10 +122,10 @@ header-includes: \include{syntax-feenox.tex}\include{syntax.tex}
  Flexibility            | \onslide<1->{\neutral}             |   \onslide<3->{\bad}          |  \onslide<4->{\good}       |  \onslide<2->{\good}
  Scalability            | \onslide<1->{\bad}                 |   \onslide<3->{\neutral}      |  \onslide<4->{\good}       |  \onslide<2->{\good}
  Traceability           | \onslide<1->{\bad}                 |   \onslide<3->{\neutral}      |  \onslide<4->{\good}       |  \onslide<2->{\good}
- Cloud-friendliness     | \onslide<1->{\bad}                 |   \onslide<3->{\good}         |  \onslide<4->{\good}       |  \onslide<2->{\good}
+ Cloudlity     | \onslide<1->{\bad}                 |   \onslide<3->{\good}         |  \onslide<4->{\good}       |  \onslide<2->{\good}
  Collaborative          | \onslide<1->{\bad}                 |   \onslide<3->{\good}         |  \onslide<4->{\neutral}    |  \onslide<2->{\bad}
- Licensing/openness     | \onslide<1->{\good/\neutral/\bad}  |   \onslide<3->{\bad}          |  \onslide<4->{\good}       |  \onslide<2->{\good}
- Non-nerd friendliness  | \onslide<1->{\good}                |   \onslide<3->{\good}         |  \onslide<4->{\neutral}    |  \onslide<2->{\bad}
+ Openness     | \onslide<1->{\good/\neutral/\bad}  |   \onslide<3->{\bad}          |  \onslide<4->{\good}       |  \onslide<2->{\good}
+ Friendliness  | \onslide<1->{\good}                |   \onslide<3->{\good}         |  \onslide<4->{\neutral}    |  \onslide<2->{\bad}
  
 
 \onslide<4->{\centering $^*$ \href{https://seamplex.com/feenox}{FeenoX} +
@@ -103,6 +134,67 @@ header-includes: \include{syntax-feenox.tex}\include{syntax.tex}
 \href{https://about.gitlab.com/}{Gitlab} /
 \href{https://gitea.com/}{Gitea}}
 
+
+
+
+## Free & open-source software in CAE
+
+
+:::::::::::::: {.columns}
+::::: {.column width="50%"}
+
+ * Free software
+
+   - Ethical principles
+   - You are **free** to modify the code to make the computation you want/need
+   - You are **free** to hire somebody to modify it for you
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{FSF-Logo_part}
+
+Free Software Foundation
+\end{center}
+   
+:::::
+
+
+::::: {.column width="50%"}
+
+ * Open source
+
+   - Technical principles
+   - You **can** see what the code does and not have to rely on the documentation
+   - You **can** hire somebody to verify the code for you
+
+\begin{center}
+\includegraphics[width=0.4\linewidth]{Opensource}
+\end{center}
+   
+:::::
+::::::::::::::
+
+## Free & open-source software in CAE
+
+ * Free software $\simeq$ Open source $\neq$ "source available," e.g.
+   - Serpent asks for an NDA to access the source
+   - CalculiX’s source code is unintelligible
+ * It is **not** about money!
+ * It is **not** about licenses!
+   - Every piece of software has licenses---especially FOSS
+
+. . .
+
+
+ * At the end of the day, FOSS may be more expensive than **privative**
+   - Do **not** say “commercial” as opposed to FOSS!
+ * But it is worth it in terms of
+   - accuracy: you are allowed to see the equations
+   - flexibility: you are allowed to make it work like you want
+
+. . .
+
+
+ * Remember: it is your signature that will appear on the engineering reports you create!
 
 ## Software Requirement Specifications
 
@@ -328,6 +420,39 @@ $
 <https://www.caeplex.com>
 
 
+
+
+
+## The Unix philosophy
+
+> [Doug McIlroy](https://en.wikipedia.org/wiki/Douglas_McIlroy), the inventor of [Unix pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) and one of the founders of the [Unix tradition](https://en.wikipedia.org/wiki/Unix), had this to say at the time:
+>
+>   (i) Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.
+>
+>   (ii) Expect the output of every program to become the input to another, as yet unknown, program. Don't clutter output with extraneous information. Avoid stringently columnar or binary input formats. Don't insist on interactive input.
+>
+> [...]
+>
+> He later summarized it this way (quoted in “A Quarter Century of Unix” in 1994):
+>
+>   * This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
+
+## Unix & CAE
+
+* Even though many FEA programs that are still mainstream today date both from the early 1970s, fifty years later they still
+
+   - Do not make just only one thing well.
+   - Do complicate old programs by adding new features.
+   - Do not expect the their output to become the input to another.
+   - Do clutter output with extraneous information.
+   - Do use stringently columnar and/or binary input (and output!) formats.
+   - Do insist on interactive output.
+
+* Rule of silence & rule of economy
+
+   - It is cheaper to re-compute and print only the required result than to browse through tons of output lines.
+   - One starts with coarse meshes nevertheless and refine only to get the "final" result.
+   
 ## 
 
 :::::::::::::: {.columns}
@@ -828,7 +953,7 @@ $
 
  * First make it work, then optimize
    - \ruleof{optimization}
-   - https://seamplex.com/feenox/tests/nafems/le10/
+   - [NAFEMS LE10 benchmark](https://seamplex.com/feenox/tests/nafems/le10/)
  * Linear solvers
    - Direct solver MUMPS
      - Robust but not scalable
@@ -1562,14 +1687,36 @@ $
 
 
 
-## Conclusions---FeenoX...
+## Conclusions
 
- * is to FEA what Markdown is to documentation
- * is (so far) the only tool that fulfills 100% a fictitious SRS:
+:::::::::::::: {.columns}
+::: {.column width="60%"}
+
+ * 2020s: **cloud-first** approach (not just cloud-friendly)
+ * FeenoX is to FEA what Markdown is to documentation
+ * FeenoX is (so far) the only tool that fulfills 100% a fictitious SRS:
    - Free and open source (GPLv3+)
    - No recompilation needed
    - Cloud-first and web friendly
    - Human-less workflow
- * follows the \unix philosophy: "do one thing well"
+ * \unix philosophy: "do one thing well"
 
+ * Documentation
+    - <https://www.seamplex.com/feenox/doc>
+    - <https://www.seamplex.com/feenox/examples>
+    - Come up with a nice logo
+ * Build a community!
+    - <https://github.com/seamplex/feenox/discussions>
  
+:::
+::: {.column width="40%"}
+
+![](clouds.jpg)
+
+. . .
+
+\vspace{1cm}
+\centering <https://www.youtube.com/watch?v=Q-lKK4A2OzA>
+:::
+::::::::::::::
+

@@ -10,11 +10,11 @@ cat << EOF > hash.yaml
 date: ${date}
 ...
 EOF
-
-  
-pandoc -s -f markdown+smart 2022-feenox.md -t gfm -o README.md \
-  --lua-filter=include-code-files.lua \
-  --lua-filter=code-style.lua
+#
+#
+# pandoc -s -f markdown+smart 2022-feenox.md -t gfm -o README.md \
+#   --lua-filter=include-code-files.lua \
+#   --lua-filter=code-style.lua
 
   
  
