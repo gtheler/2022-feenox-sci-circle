@@ -410,17 +410,6 @@ $
 ![](lorenz.svg)
 
  
- 
-## Web interface: CAEplex, finite elements in the cloud
-
-\centering ![](caeplex-ipad.jpg){width=70%}
-
-<https://www.seamplex.com/feenox/videos/caeplex-ipad.mp4>
-
-<https://www.caeplex.com>
-
-
-
 
 
 ## The Unix philosophy
@@ -453,6 +442,19 @@ $
    - It is cheaper to re-compute and print only the required result than to browse through tons of output lines.
    - One starts with coarse meshes nevertheless and refine only to get the "final" result.
    
+   
+ 
+## Web interface: CAEplex, finite elements in the cloud
+
+\centering ![](caeplex-ipad.jpg){width=70%}
+
+<https://www.seamplex.com/feenox/videos/caeplex-ipad.mp4>
+
+<https://www.caeplex.com>
+
+
+
+   
 ## 
 
 :::::::::::::: {.columns}
@@ -460,7 +462,7 @@ $
 
 ### 2. Architecture
 
-\newcommand{\unix}{{\textcolor{cyan}{UNIX}}}
+\newcommand{\unix}{{\textcolor{cyan}{Unix}}}
 \newcommand{\ruleof}[1]{{\textcolor{cyan}{Rule of {#1}}}}
 \newcommand{\ruleofpar}[1]{\vspace{-0.25cm}\hfill{\footnotesize\textcolor{cyan}{(Rule of {#1})}}}
 
@@ -742,8 +744,8 @@ $
  * Or use pre-compiled binaries
  
    ```terminal
-   wget http://gmsh.info/bin/Linux/gmsh-Linux64.tgz
-   wget https://seamplex.com/feenox/dist/linux/feenox-linux-amd64.tar.gz
+   $ wget http://gmsh.info/bin/Linux/gmsh-Linux64.tgz
+   $ wget https://seamplex.com/feenox/dist/linux/feenox-linux-amd64.tar.gz
    ```
    
  * Everything is Docker-friendly
@@ -1047,13 +1049,13 @@ $
 ```{.feenox include="thermal-slabs/temperature.fee"}
 ```
 
-. . . 
-
  * Everything is an expression
  * Similar problems need similar inputs
  * \ruleof{least surprise}: $k(x)=1+x$
    
 :::
+
+. . . 
 
 ::: {.column width="55%"}
 
@@ -1066,7 +1068,7 @@ done
 \centering ![](thermal-slabs.pdf){width=75%}
 
  * FeenoX can tell that $k(T)$ is non-linear
-   - It switchs from [`KSP`](https://petsc.org/release/docs/manual/ksp/) to [`SNES`](https://petsc.org/release/docs/manual/snes/)
+   - It switches from [`KSP`](https://petsc.org/release/docs/manual/ksp/) to [`SNES`](https://petsc.org/release/docs/manual/snes/)
 
 :::
 
@@ -1161,15 +1163,15 @@ $
 
 ### FeenoX {.example}
 
- * Think for the future! \ruleof{extensibility}
-   - GPLv3**+**: the '+' is for the future
- * Nice-to-haves: \todolater
-   - Lagrangian elements, DG, $h$-$p$ AMR, ...
  * Other problems & formulations:
    - Each PDE has an independent directory
    - "Virtual methods" as function pointers
    - Use Laplace as a template (elliptic)
    - Add or remove source directory
+ * Think for the future! \ruleof{extensibility}
+   - GPLv3**+**: the '+' is for the future
+ * Nice-to-haves: \todolater
+   - Lagrangian elements, DG, $h$-$p$ AMR, ...
  * Coupled calculations: \todolater
    - Plain (RAM-disk) files
    - Shared memory & semaphores
@@ -1701,6 +1703,8 @@ $
    - Human-less workflow
  * \unix philosophy: "do one thing well"
 
+\vspace{0.5cm}
+ 
  * Documentation
     - <https://www.seamplex.com/feenox/doc>
     - <https://www.seamplex.com/feenox/examples>
