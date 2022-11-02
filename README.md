@@ -18,46 +18,38 @@ title: FeenoX, a cloud-first free and open source finite-element(ish)
 
 ## 
 
-:::::::::::::: {.columns} ::: {.column width=“50%”}
+<div class="columns">
+
+<div class="column" width="60%">
 
 ![](feenox-console.png)
 
-:::
+- The last X makes it rhyme with **Unix** and Linux.
+- “noX” means that there is no graphical (i.e. X) interface
+- Fee-no means that there are no fees involved (free as in “free beer”)
+- FeenoX is the successor of the now-superseded FEA program Fino
+- With some luck one can read nite ElEments NO-X”
+- With mode luck, “FrEE” (as in “free speech”)
 
-<div class="column" width="50%">
+</div>
 
--   FeenoX
+<div class="column" width="40%">
 
-    -   The last X makes it rhyme with **Unix** and Linux.
-    -   “noX” means that there is no graphical (i.e. X) interface
-    -   Fee-no means that there are no fees involved (free as in “free
-        beer”)
-    -   FeenoX is the successor of the now-superseded FEA program Fino
-    -   It rhymes with FEniCS
-    -   With some luck one can read “Finite ElEments NO-X”
-    -   With mode luck, “FrEE” (as in “free speech”)
+- cloud-first ($\neq$ cloud-friendly)
+  - cloud $=$ somebody else’s computer(s)
+- free & open source ($\neq$ gratis)
+  - free $\simeq$ open source
+  - it is not about **price**!
+  - free is about **freedom**
+  - open is about **transparency**
+- finite-element(ish)
+  - PDEs with FEM & FVM
+  - ODEs with IMEX
+  - generic math problems
+- computational engineering tool
+  - the right tool for the right problem, right?
 
--   cloud-first
-
-    -   ≠ cloud-friendly
-    -   **cloud** first, then other stuff
-
--   free & open source
-
-    -   free ≠ open source
-    -   it is not about **price**!
-    -   free is about *freedom*
-    -   open is about *transparency*
-
--   finite-element(ish)
-
-    -   it can solve PDEs using FEM & FVM
-    -   it can solve ODEs
-    -   it can solve generic math problems
-
--   tool
-
-    -   the right tool for the right problem, right?
+</div>
 
 </div>
 
@@ -83,15 +75,15 @@ title: FeenoX, a cloud-first free and open source finite-element(ish)
 
 </div>
 
-| Feature               |     |     |     |     |
-|:----------------------|:---:|:---:|:---:|:---:|
-| Aesthetics            |     |     |     |     |
-| Convertibility        |     |     |     |     |
-| Traceability          |     |     |     |     |
-| Mobile-friendliness   |     |     |     |     |
-| Collaborative         |     |     |     |     |
-| Licensing/openness    |     |     |     |     |
-| Non-nerd friendliness |     |     |     |     |
+| Feature             |     |     |     |     |
+|:--------------------|:---:|:---:|:---:|:---:|
+| Aesthetics          |     |     |     |     |
+| Convertibility      |     |     |     |     |
+| Traceability        |     |     |     |     |
+| Mobile-friendliness |     |     |     |     |
+| Collaborative       |     |     |     |     |
+| Openness            |     |     |     |     |
+| Friendliness        |     |     |     |     |
 
 ## How do we perform scientific/engineering computations?
 
@@ -115,15 +107,65 @@ title: FeenoX, a cloud-first free and open source finite-element(ish)
 
 </div>
 
-| Feature               |     |     |     |     |
-|:----------------------|:---:|:---:|:---:|:---:|
-| Flexibility           |     |     |     |     |
-| Scalability           |     |     |     |     |
-| Traceability          |     |     |     |     |
-| Cloud-friendliness    |     |     |     |     |
-| Collaborative         |     |     |     |     |
-| Licensing/openness    |     |     |     |     |
-| Non-nerd friendliness |     |     |     |     |
+| Feature       |     |     |     |     |
+|:--------------|:---:|:---:|:---:|:---:|
+| Flexibility   |     |     |     |     |
+| Scalability   |     |     |     |     |
+| Traceability  |     |     |     |     |
+| Cloudlity     |     |     |     |     |
+| Collaborative |     |     |     |     |
+| Openness      |     |     |     |     |
+| Friendliness  |     |     |     |     |
+
+## Free & open-source software in CAE
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+- Free software
+
+  - Ethical principles
+  - You are **free** to modify the code to make the computation you
+    want/need
+  - You are **free** to hire somebody to modify it for you
+
+</div>
+
+<div class="column" width="50%">
+
+- Open source
+
+  - Technical principles
+  - You **can** see what the code does and not have to rely on the
+    documentation
+  - You **can** hire somebody to verify the code for you
+
+</div>
+
+</div>
+
+## Free & open-source software in CAE
+
+- Free software $\simeq$ Open source $\neq$ “source available,” e.g.
+  - Serpent asks for an NDA to access the source
+  - CalculiX’s source code is unintelligible
+- It is **not** about money!
+- It is **not** about licenses!
+  - Every piece of software has licenses—especially FOSS
+
+. . .
+
+- At the end of the day, FOSS may be more expensive than **privative**
+  - Do **not** say “commercial” as opposed to FOSS!
+- But it is worth it in terms of
+  - accuracy: you are allowed to see the equations
+  - flexibility: you are allowed to make it work like you want
+
+. . .
+
+- Remember: it is your signature that will appear on the engineering
+  reports you create!
 
 ## Software Requirement Specifications
 
@@ -135,31 +177,31 @@ for a computational tool:
 <div class="column" width="35%">
 
 1.  Introduction
-    -   1.1. Objective
-    -   1.2. Scope
+    - 1.1. Objective
+    - 1.2. Scope
 2.  Architecture
-    -   2.1. Deployment
-    -   2.2. Execution
-    -   2.3. Efficiency
-    -   2.4. Scalability
-    -   2.5. Flexibility
-    -   2.6. Extensibility
-    -   2.7. Interoperability
+    - 2.1. Deployment
+    - 2.2. Execution
+    - 2.3. Efficiency
+    - 2.4. Scalability
+    - 2.5. Flexibility
+    - 2.6. Extensibility
+    - 2.7. Interoperability
 
 </div>
 
 <div class="column" width="50%">
 
 3.  Interfaces
-    -   3.1. Problem input
-    -   3.2. Results output
+    - 3.1. Problem input
+    - 3.2. Results output
 4.  Quality assurance
-    -   4.1. Reproducibility and traceability
-    -   4.2. Automated testing
-    -   4.3. Bug reporting and tracking
-    -   4.4. Verification
-    -   4.5. Validation
-    -   4.6. Documentation
+    - 4.1. Reproducibility and traceability
+    - 4.2. Automated testing
+    - 4.3. Bug reporting and tracking
+    - 4.4. Verification
+    - 4.5. Validation
+    - 4.6. Documentation
 
 </div>
 
@@ -167,8 +209,8 @@ for a computational tool:
 
 ### FeenoX Software Design Specifications
 
--   A fictitious & imaginary tender applying to the SRS addressing each
-    section.
+- A fictitious & imaginary tender applying to the SRS addressing each
+  section.
 
 ## 
 
@@ -178,21 +220,21 @@ for a computational tool:
 
 ### 1. Introduction
 
--   Application to industrial problems
-    -   Open source (to allow third-party V&V)
--   First version should handle some problems
--   Extensible to other problems & formulations
-    -   Free (as in freedom to hire somebody to modify/extend it)
+- Application to industrial problems
+  - Open source (to allow third-party V&V)
+- First version should handle some problems
+- Extensible to other problems & formulations
+  - Free (as in freedom to hire somebody to modify/extend it)
 
 #### 1.1. Objective
 
--   Solve DAEs and/or PDEs
-    -   Heat conduction
-    -   Elasticity
-    -   Electromagnetism
-    -   Fluid mechanics
-    -   …
--   State-of-the-art cloud-first
+- Solve DAEs and/or PDEs
+  - Heat conduction
+  - Elasticity
+  - Electromagnetism
+  - Fluid mechanics
+  - …
+- State-of-the-art cloud-first
 
 </div>
 
@@ -202,22 +244,22 @@ for a computational tool:
 
 ### FeenoX
 
--   Free as “software libre”
-    -   GPLv3+
-    -   Only FOSS dependencies
-    -   Main target is `linux-x86_64`
-    -   Development environment is Debian
--   Initial version supports
-    -   Dynamical systems (DAE)
-    -   Laplace/Poisson/Helmholtz (FEM)
-    -   Heat (FEM)
-    -   Elasticity (FEM)
-    -   Modal (FEM)
-    -   Neutron transport and diffusion (FEM/FVM)
--   Templates for more formulations
-    -   Electromagnetism
-    -   Chemical diffusion/reaction
-    -   Fluid mechanics?
+- Free as “software libre”
+  - GPLv3+
+  - Only FOSS dependencies
+  - Main target is `linux-x86_64`
+  - Development environment is Debian
+- Initial version supports
+  - Dynamical systems (DAE)
+  - Laplace/Poisson/Helmholtz (FEM)
+  - Heat (FEM)
+  - Elasticity (FEM)
+  - Modal (FEM)
+  - Neutron transport and diffusion (FEM/FVM)
+- Templates for more formulations
+  - Electromagnetism
+  - Chemical diffusion/reaction
+  - Fluid mechanics?
 
 </div>
 
@@ -231,19 +273,19 @@ for a computational tool:
 
 #### 1.2. Scope
 
--   The problem should be defined programatically
-    -   One or more input files (JSON, YAML, ad-hoc format), and/or
-    -   An API for high-level language (Python, Julia, etc.)
--   There is no need to *include* a GUI
-    -   The tool should *allow* a GUI to be used
-        -   Desktop
-        -   Web
-        -   Mobile
--   The mesh can be an input
-    -   As long as its creation meets the SRS
--   Include documentation about how a…
-    -   Pre-processor should create inputs
-    -   Post-processor should read outputs
+- The problem should be defined programatically
+  - One or more input files (JSON, YAML, ad-hoc format), and/or
+  - An API for high-level language (Python, Julia, etc.)
+- There is no need to *include* a GUI
+  - The tool should *allow* a GUI to be used
+    - Desktop
+    - Web
+    - Mobile
+- The mesh can be an input
+  - As long as its creation meets the SRS
+- Include documentation about how a…
+  - Pre-processor should create inputs
+  - Post-processor should read outputs
 
 </div>
 
@@ -253,21 +295,21 @@ for a computational tool:
 
 ### FeenoX
 
--   No GUI, console binary executable
--   “Transfer-function”-like between I/O
-    -   No need to recompile the binary
+- No GUI, console binary executable
+- “Transfer-function”-like between I/O
+  - No need to recompile the binary
 
-        <img src="transfer.svg" style="width:90.0%" /> 
--   English-like syntactic-sugared input files
-    -   Nouns are definitions
-    -   Verbs are instructions
--   Python & Julia API:
-    -   But already taken into account in the design & implementation
--   Separate mesher
-    -   [Gmsh](http://gmsh.info/) (GPLv2, meets SRS)
-    -   Anything that writes `.msh`
--   Possibility to use GUI
-    -   CAEplex <https://www.caeplex.com>
+    <img src="transfer.svg" style="width:90.0%" /> 
+- English-like syntactic-sugared input files
+  - Nouns are definitions
+  - Verbs are instructions
+- Python & Julia API:
+  - But already taken into account in the design & implementation
+- Separate mesher
+  - [Gmsh](http://gmsh.info/) (GPLv2, meets SRS)
+  - Anything that writes `.msh`
+- Possibility to use GUI
+  - CAEplex <https://www.caeplex.com>
 
 </div>
 
@@ -279,26 +321,25 @@ for a computational tool:
 
 <div class="column" width="45%">
 
-Solve
-$$
-\\begin{cases}
-\\dot{x} = \\sigma \\cdot (y - x) \\\\
-\\dot{y} = x \\cdot (r - z) - y \\\\
-\\dot{z} = x y - b z
-\\end{cases}
-$$
-
-for 0 \< *t* \< 40 with initial conditions
-
-$$
-\\begin{cases}
-x(0) = -11\\\\
-y(0) = -16\\\\
-z(0) = 22.5\\\\
-\\end{cases}
+Solve $$
+\begin{cases}
+\dot{x} = \sigma \cdot (y - x) \\
+\dot{y} = x \cdot (r - z) - y \\
+\dot{z} = x y - b z
+\end{cases}
 $$
 
-and *σ* = 10, *r* = 28 and *b* = 8/3.
+for $0 < t < 40$ with initial conditions
+
+$$
+\begin{cases}
+x(0) = -11\\
+y(0) = -16\\
+z(0) = 22.5\\
+\end{cases}
+$$
+
+and $\sigma=10$, $r=28$ and $b=8/3$.
 
 </div>
 
@@ -346,6 +387,52 @@ $
 
 ![](lorenz.svg)
 
+## The Unix philosophy
+
+> [Doug McIlroy](https://en.wikipedia.org/wiki/Douglas_McIlroy), the
+> inventor of [Unix
+> pipes](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) and one of
+> the founders of the [Unix
+> tradition](https://en.wikipedia.org/wiki/Unix), had this to say at the
+> time:
+>
+> 1)  Make each program do one thing well. To do a new job, build afresh
+>     rather than complicate old programs by adding new features.
+>
+> 2)  Expect the output of every program to become the input to another,
+>     as yet unknown, program. Don’t clutter output with extraneous
+>     information. Avoid stringently columnar or binary input formats.
+>     Don’t insist on interactive input.
+>
+> \[…\]
+>
+> He later summarized it this way (quoted in “A Quarter Century of Unix”
+> in 1994):
+>
+> - This is the Unix philosophy: Write programs that do one thing and do
+>   it well. Write programs to work together. Write programs to handle
+>   text streams, because that is a universal interface.
+
+## Unix & CAE
+
+- Even though many FEA programs that are still mainstream today date
+  both from the early 1970s, fifty years later they still
+
+  - Do not make just only one thing well.
+  - Do complicate old programs by adding new features.
+  - Do not expect the their output to become the input to another.
+  - Do clutter output with extraneous information.
+  - Do use stringently columnar and/or binary input (and output!)
+    formats.
+  - Do insist on interactive output.
+
+- Rule of silence & rule of economy
+
+  - It is cheaper to re-compute and print only the required result than
+    to browse through tons of output lines.
+  - One starts with coarse meshes nevertheless and refine only to get
+    the “final” result.
+
 ## Web interface: CAEplex, finite elements in the cloud
 
 <img src="caeplex-ipad.jpg" style="width:70.0%" />
@@ -362,20 +449,20 @@ $
 
 ### 2. Architecture
 
--   Should run on mainstream cloud servers
-    -   GNU/Linux
-    -   Multi-core Intel-compatible CPUs
-    -   Several levels of memory cache
-    -   A few Gb of RAM
-    -   Several Gb of SSD
-    -   Either
-        -   Bare metal
-        -   Virtualized
-        -   Containerized
--   Standard compilers, libraries and dependencies
-    -   Available in common GNU/Linux repositories
-    -   Preferable 100% open source
-    -   Adhere to well-established standards
+- Should run on mainstream cloud servers
+  - GNU/Linux
+  - Multi-core Intel-compatible CPUs
+  - Several levels of memory cache
+  - A few Gb of RAM
+  - Several Gb of SSD
+  - Either
+    - Bare metal
+    - Virtualized
+    - Containerized
+- Standard compilers, libraries and dependencies
+  - Available in common GNU/Linux repositories
+  - Preferable 100% open source
+  - Adhere to well-established standards
 
 </div>
 
@@ -385,40 +472,40 @@ $
 
 ### FeenoX
 
--   Third-system effect (after v1 & v2)
+- Third-system effect (after v1 & v2)
 
--   philosophy: “do one thing well”
+- philosophy: “do one thing well”
 
-    -   : no GUI
-    -   : Gnuplot, Gmsh, …
-    -   …more rules to come!
+  - : no GUI
+  - : Gnuplot, Gmsh, …
+  - …more rules to come!
 
--   Third-party math libraries
+- Third-party math libraries
 
-    -   GNU GSL, PETSc, SLEPc, SUNDIALS
+  - GNU GSL, PETSc, SLEPc, SUNDIALS
 
-    -   
+  - 
 
--   Dependencies available in APT
+- Dependencies available in APT
 
-    ``` terminal
-    apt-get install git gcc make automake autoconf
-    apt-get install libgsl-dev
-    apt-get install lib-sundials-dev petsc-dev slepc-dev
-    ```
+  ``` terminal
+  apt-get install git gcc make automake autoconf
+  apt-get install libgsl-dev
+  apt-get install lib-sundials-dev petsc-dev slepc-dev
+  ```
 
--   Sources on
-    [github.com/seamplex/feenox](https://github.com/seamplex/feenox)
+- Sources on
+  [github.com/seamplex/feenox](https://github.com/seamplex/feenox)
 
-    ``` terminal
-    git clone https://github.com/seamplex/feenox
-    ```
+  ``` terminal
+  git clone https://github.com/seamplex/feenox
+  ```
 
--   Autotools & friends for compilation
+- Autotools & friends for compilation
 
-    ``` terminal
-    ./autogen.sh && ./configure && make
-    ```
+  ``` terminal
+  ./autogen.sh && ./configure && make
+  ```
 
 </div>
 
@@ -432,15 +519,15 @@ $
 
 ### 2. Architecture
 
--   Small coarse problems should be run in single hosts to check inputs
-    -   Local desktop/laptops (not needed but suggested)
-    -   Windows and MacOS (not needed but suggested)
-    -   Small cloud instances
--   Large actual problems should be split into several hosts
-    -   HPC clusters
-    -   Scalable cloud instances
--   Mobile devices (not needed but suggested)
-    -   As control/monitoring devices
+- Small coarse problems should be run in single hosts to check inputs
+  - Local desktop/laptops (not needed but suggested)
+  - Windows and MacOS (not needed but suggested)
+  - Small cloud instances
+- Large actual problems should be split into several hosts
+  - HPC clusters
+  - Scalable cloud instances
+- Mobile devices (not needed but suggested)
+  - As control/monitoring devices
 
 </div>
 
@@ -450,26 +537,26 @@ $
 
 ### FeenoX
 
--   Tested on
+- Tested on
 
-    -   Raspberry Pi
-    -   Laptop (GNU/Linux & Windows 10)
-    -   Macbook
-    -   Desktop PC
-    -   Bare-metal servers
-    -   Vagrant/Virtualbox
-    -   Docker/Kubernetes
-    -   AWS/DigitalOcean/Contabo
+  - Raspberry Pi
+  - Laptop (GNU/Linux & Windows 10)
+  - Macbook
+  - Desktop PC
+  - Bare-metal servers
+  - Vagrant/Virtualbox
+  - Docker/Kubernetes
+  - AWS/DigitalOcean/Contabo
 
--   Parallelization:
+- Parallelization:
 
-    -   Gmsh partitioning with METIS
-    -   PETSc/SLEPc with MPI
+  - Gmsh partitioning with METIS
+  - PETSc/SLEPc with MPI
 
--   Web: <https://www.caeplex.com> (v2)
+- Web: <https://www.caeplex.com> (v2)
 
-    <img src="logo-caeplex-only-cloud.svg" style="width:30.0%" />  
-    <img src="logo-caeplex-only-text.svg" style="width:30.0%" />
+  <img src="logo-caeplex-only-cloud.svg" style="width:30.0%" />  
+  <img src="logo-caeplex-only-text.svg" style="width:30.0%" />
 
 </div>
 
@@ -494,8 +581,9 @@ $
 2.  Create a maze
 3.  Download it in PNG
 4.  Perform some conversions
-    -   PNG → PNM → SVG → DXF → GEO
-    -   Details in FeenoX Tutorial \#2
+    - PNG $\rightarrow$ PNM $\rightarrow$ SVG $\rightarrow$ DXF
+      $\rightarrow$ GEO
+    - Details in FeenoX Tutorial \#2
 
 </div>
 
@@ -511,8 +599,8 @@ $
 
     ![](gmsh-maze.png) 
 
-    -   Add a surface
-    -   Set physical curves for “start” and “end”
+    - Add a surface
+    - Set physical curves for “start” and “end”
 
 6.  Mesh it
 
@@ -534,13 +622,12 @@ $
 
 <div class="column" width="50%">
 
-7.  Solve ∇<sup>2</sup>*ϕ* = 0 with BCs
-    $$
-    \\begin{cases}
-    \\phi=0 & \\text{at “start”} \\\\
-    \\phi=1 & \\text{at “end”} \\\\
-    \\nabla \\phi \\cdot \\hat{\\mathbf{n}} = 0 & \\text{everywhere else} \\\\
-    \\end{cases}
+7.  Solve $\nabla^2 \phi = 0$ with BCs $$
+    \begin{cases}
+    \phi=0 & \text{at “start”} \\
+    \phi=1 & \text{at “end”} \\
+    \nabla \phi \cdot \hat{\mathbf{n}} = 0 & \text{everywhere else} \\
+    \end{cases}
     $$
 
     ``` feenox
@@ -565,7 +652,7 @@ $
     $
     ```
 
-8.  Go to start and follow the gradient ∇*ϕ*!
+8.  Go to start and follow the gradient $\nabla \phi$!
 
 </div>
 
@@ -607,23 +694,23 @@ $
 
 #### 2.1. Deployment
 
--   Automatically compile from source
-    -   Particular optimization flags
--   Availability of pre-compiled binaries
-    -   Common architectures and options
--   Both of them have to be available online
+- Automatically compile from source
+  - Particular optimization flags
+- Availability of pre-compiled binaries
+  - Common architectures and options
+- Both of them have to be available online
 
 #### 2.2. Execution
 
--   Remote execution, either
-    -   By a direct user action
-    -   From a higher-level workflow
--   Outer loops have to be supported
-    -   scripted
-    -   parametric
-    -   optimization
--   Ways to read data from the outer loop
--   Ways to write scalar figures of merit
+- Remote execution, either
+  - By a direct user action
+  - From a higher-level workflow
+- Outer loops have to be supported
+  - scripted
+  - parametric
+  - optimization
+- Ways to read data from the outer loop
+- Ways to write scalar figures of merit
 
 </div>
 
@@ -633,37 +720,37 @@ $
 
 ### FeenoX
 
--   Compile optimized dependencies
+- Compile optimized dependencies
 
-    ``` terminal
-    $ cd $PETSC_DIR
-    $ export PETSC_ARCH=linux-fast
-    $ ./configure --with-debug=0 COPTFLAGS="-Ofast"
-    $ make -j8
-    ```
+  ``` terminal
+  $ cd $PETSC_DIR
+  $ export PETSC_ARCH=linux-fast
+  $ ./configure --with-debug=0 COPTFLAGS="-Ofast"
+  $ make -j8
+  ```
 
--   Configure FeenoX with particular flags
+- Configure FeenoX with particular flags
 
-    ``` terminal
-    $ git clone https://github.com/seamplex/feenox
-    $ cd feenox
-    $ ./autogen.sh
-    $ export PETSC_ARCH=linux-fast
-    $ ./configure MPICH_CC=clang CFLAGS=-Ofast
-    $ make -j8
-    # make install
-    ```
+  ``` terminal
+  $ git clone https://github.com/seamplex/feenox
+  $ cd feenox
+  $ ./autogen.sh
+  $ export PETSC_ARCH=linux-fast
+  $ ./configure MPICH_CC=clang CFLAGS=-Ofast
+  $ make -j8
+  # make install
+  ```
 
--   Or use pre-compiled binaries
+- Or use pre-compiled binaries
 
-    ``` terminal
-    wget http://gmsh.info/bin/Linux/gmsh-Linux64.tgz
-    wget https://seamplex.com/feenox/dist/linux/feenox-linux-amd64.tar.gz
-    ```
+  ``` terminal
+  $ wget http://gmsh.info/bin/Linux/gmsh-Linux64.tgz
+  $ wget https://seamplex.com/feenox/dist/linux/feenox-linux-amd64.tar.gz
+  ```
 
--   Everything is Docker-friendly
+- Everything is Docker-friendly
 
--   Execution examples follow →
+- Execution examples follow $\rightarrow$
 
 </div>
 
@@ -686,7 +773,7 @@ PRINT_FUNCTION f MIN 1 MAX 20 STEP 1
 
 ``` feenox
 # the fibonacci sequence as a vector
-VECTOR f SIZE 20
+VECTOR f[20]
 
 f[i]<1:2> = 1
 f[i]<3:vecsize(f)> = f[i-2] + f[i-1]
@@ -805,11 +892,11 @@ PRINT nodes w(500,0,0) "\# $1 $2"
 
 ![](cantilever-hex.png)
 
--   -   Only one material, no need to link volumes with materials
+- - Only one material, no need to link volumes with materials
 
-    ``` feenox
-    E = 2.1e11   # Young modulus in Pa
-    ```
+  ``` feenox
+  E = 2.1e11   # Young modulus in Pa
+  ```
 
 </div>
 
@@ -827,7 +914,7 @@ PRINT nodes w(500,0,0) "\# $1 $2"
 
 ![](fork-meshed.svg)
 
-ℓ<sub>1</sub> to have 440 Hz?
+$\ell_1$ to have 440 Hz?
 
 </div>
 
@@ -909,26 +996,26 @@ $
 
 #### 2.3. Efficiency
 
--   Similar to to other tools in terms of
-    -   CPU/GPU
-    -   RAM
-    -   Storage
+- Similar to to other tools in terms of
+  - CPU/GPU
+  - RAM
+  - Storage
 
 #### 2.4. Scalability
 
--   Small problems to check correctness
--   Large problems in parallel
-    -   Reasonable weak & strong scalability
+- Small problems to check correctness
+- Large problems in parallel
+  - Reasonable weak & strong scalability
 
 #### 2.5. Flexibility
 
--   Engineering problems with
-    -   Multiple materials
-    -   Space-dependent properties
-    -   Space & time-dependent BCs
--   Handle point-wise data
-    -   Properties
-    -   Time-dependent scalars
+- Engineering problems with
+  - Multiple materials
+  - Space-dependent properties
+  - Space & time-dependent BCs
+- Handle point-wise data
+  - Properties
+  - Time-dependent scalars
 
 </div>
 
@@ -938,26 +1025,27 @@ $
 
 ### FeenoX
 
--   First make it work, then optimize
-    -   
+- First make it work, then optimize
+  - 
 
-    -   https://seamplex.com/feenox/tests/nafems/le10/
--   Linear solvers
-    -   Direct solver MUMPS
-        -   Robust but not scalable
-    -   GAMG-preconditioned KSP
-        -   Near-nullspace improves convergence
--   Non-linear & transient solvers
-    -   Scalable as PETSc
--   Written in ANSI C99 (no C++ nor Fortran)
-    -   Autotools & friends, POSIX
+  - [NAFEMS LE10
+    benchmark](https://seamplex.com/feenox/tests/nafems/le10/)
+- Linear solvers
+  - Direct solver MUMPS
+    - Robust but not scalable
+  - GAMG-preconditioned KSP
+    - Near-nullspace improves convergence
+- Non-linear & transient solvers
+  - Scalable as PETSc
+- Written in ANSI C99 (no C++ nor Fortran)
+  - Autotools & friends, POSIX
 
-    -   Tested with `gcc`, `clang` and `icc`
+  - Tested with `gcc`, `clang` and `icc`
 
-    -   Rust & Go, can’t tell (yet)
+  - Rust & Go, can’t tell (yet)
 
-    -   
--   Flexibility follows →
+  - 
+- Flexibility follows $\rightarrow$
 
 </div>
 
@@ -969,29 +1057,29 @@ $
 
 <div class="column" width="45%">
 
-Solve heat conduction on the slab *x* ∈ \[0:1\] with boundary conditions
+Solve heat conduction on the slab $x \in [0:1]$ with boundary conditions
 
 $$
-\\begin{cases}
-T(0) = 0 & \\text{(left)} \\\\
-T(1) = 1 & \\text{(right)} \\\\
-\\end{cases}
+\begin{cases}
+T(0) = 0 & \text{(left)} \\
+T(1) = 1 & \text{(right)} \\
+\end{cases}
 $$
 
-and uniform conductivity. Compute $T\\left(\\frac{1}{2}\\right)$.
+and uniform conductivity. Compute $T\left(\frac{1}{2}\right)$.
 
 . . .
 
--   English self-evident ASCII input
-    -   Syntactic sugar
-    -   Simple problems, simple inputs
--   Mesh separated from problem
-    -   Git-friendly `.geo` & `.fee`
--   Output is 100% user-defined
-    -   No `PRINT` no output
+- English self-evident ASCII input
+  - Syntactic sugar
+  - Simple problems, simple inputs
+- Mesh separated from problem
+  - Git-friendly `.geo` & `.fee`
+- Output is 100% user-defined
+  - No `PRINT` no output
 
-    -   
--   There is no node at *x* = 1/2 = 0.5!
+  - 
+- There is no node at $x=1/2=0.5$!
 
 </div>
 
@@ -1071,13 +1159,13 @@ k(x) = 1+a*T(x)
 T_analytical(x) = (1/a)*(sqrt(1+(2+a)*a*x)-1)
 ```
 
-. . .
-
--   Everything is an expression
--   Similar problems need similar inputs
--   : *k*(*x*) = 1 + *x*
+- Everything is an expression
+- Similar problems need similar inputs
+- : $k(x)=1+x$
 
 </div>
+
+. . .
 
 <div class="column" width="55%">
 
@@ -1089,10 +1177,9 @@ done
 
 <embed src="thermal-slabs.pdf" style="width:75.0%" />
 
--   FeenoX can tell that *k*(*T*) is non-linear
-    -   It switchs from
-        [`KSP`](https://petsc.org/release/docs/manual/ksp/) to
-        [`SNES`](https://petsc.org/release/docs/manual/snes/)
+- FeenoX can tell that $k(T)$ is non-linear
+  - It switches from [`KSP`](https://petsc.org/release/docs/manual/ksp/)
+    to [`SNES`](https://petsc.org/release/docs/manual/snes/)
 
 </div>
 
@@ -1141,9 +1228,9 @@ WRITE_MESH two-squares.vtk  T CELLS k
 
 <img src="two-squares-conductivity.png" style="width:70.0%" />
 
--   Volumes ⇔ materials now needed
--   FeenoX detects the problem is non-linear
--   : roughish output
+- Volumes $\Leftrightarrow$ materials now needed
+- FeenoX detects the problem is non-linear
+- : roughish output
 
 </div>
 
@@ -1212,18 +1299,18 @@ $
 
 #### 2.6. Extensibility
 
--   Possibility to add more features
-    -   More PDEs
-    -   New material models (i.e. stress-strain)
-    -   Other element types
--   Clear licensing scheme for extensions
+- Possibility to add more features
+  - More PDEs
+  - New material models (i.e. stress-strain)
+  - Other element types
+- Clear licensing scheme for extensions
 
 #### 2.7. Interoperability
 
--   Ability to exchange data with other tools following this SRS
-    -   Pre and post processors
-    -   Optimization tools
-    -   Coupled multi-physics calculations
+- Ability to exchange data with other tools following this SRS
+  - Pre and post processors
+  - Optimization tools
+  - Coupled multi-physics calculations
 
 </div>
 
@@ -1233,24 +1320,24 @@ $
 
 ### FeenoX
 
--   Think for the future!
-    -   GPLv3**+**: the ‘+’ is for the future
--   Nice-to-haves:
-    -   Lagrangian elements, DG, *h*-*p* AMR, …
--   Other problems & formulations:
-    -   Each PDE has an independent directory
-    -   “Virtual methods” as function pointers
-    -   Use Laplace as a template (elliptic)
-    -   Add or remove source directory
--   Coupled calculations:
-    -   Plain (RAM-disk) files
-    -   Shared memory & semaphores
-    -   MPI
--   Interoperability
-    -   Gnuplot, matplotlib, etc.
-    -   Gmsh (+ Meshio), Paraview
-    -   CAEplex
-    -   PrePoMax, FreeCAD, …:
+- Other problems & formulations:
+  - Each PDE has an independent directory
+  - “Virtual methods” as function pointers
+  - Use Laplace as a template (elliptic)
+  - Add or remove source directory
+- Think for the future!
+  - GPLv3**+**: the ‘+’ is for the future
+- Nice-to-haves:
+  - Lagrangian elements, DG, $h$-$p$ AMR, …
+- Coupled calculations:
+  - Plain (RAM-disk) files
+  - Shared memory & semaphores
+  - MPI
+- Interoperability
+  - Gnuplot, matplotlib, etc.
+  - Gmsh (+ Meshio), Paraview
+  - CAEplex
+  - PrePoMax, FreeCAD, …:
 
 </div>
 
@@ -1262,15 +1349,15 @@ $
 
 <div class="column" width="60%">
 
-Solve ∇<sup>2</sup>*ϕ* = 0 over \[−1:+1\] × \[−1:+1\] with
+Solve $\nabla^2 \phi = 0$ over $[-1:+1]\times[-1:+1]$ with
 
 $$
-\\begin{cases}
-\\phi(x,y) = +y & \\text{for $x=-1$ (left)} \\\\
-\\phi(x,y) = -y & \\text{for $x=+1$ (right)} \\\\
-\\nabla \\phi \\cdot \\hat{\\mathbf{n}} = \\sin\\left(\\frac{\\pi}{2} x\\right) & \\text{for $y=-1$ (bottom)} \\\\
-\\nabla \\phi \\cdot \\hat{\\mathbf{n}} =0 & \\text{for $y=+1$ (top)} \\\\
-\\end{cases}
+\begin{cases}
+\phi(x,y) = +y & \text{for $x=-1$ (left)} \\
+\phi(x,y) = -y & \text{for $x=+1$ (right)} \\
+\nabla \phi \cdot \hat{\mathbf{n}} = \sin\left(\frac{\pi}{2} x\right) & \text{for $y=-1$ (bottom)} \\
+\nabla \phi \cdot \hat{\mathbf{n}} =0 & \text{for $y=+1$ (top)} \\
+\end{cases}
 $$
 
 ``` feenox
@@ -1312,24 +1399,24 @@ WRITE_MESH laplace-square.vtk phi VECTOR dphidx dphidy 0
 
 ### 3. Interfaces
 
--   Fully human-less execution
-    -   Input files (1 or more)
-    -   Output files (0 or more)
--   Ability to remotely report status
-    -   Progress
-    -   Errors
+- Fully human-less execution
+  - Input files (1 or more)
+  - Output files (0 or more)
+- Ability to remotely report status
+  - Progress
+  - Errors
 
 #### 3.1. Input
 
--   Problem fully defined in input files
-    -   Ad-hoc syntax
-    -   API for high-level languages
-    -   Other files (data, meshes, scripts)
--   Preferably ASCII (for DCVS)
-    -   Avoid mixing problem and mesh data
--   GUI not mandatory but possible
-    -   Ok to have basic usage through GUI
-    -   Advanced features through API
+- Problem fully defined in input files
+  - Ad-hoc syntax
+  - API for high-level languages
+  - Other files (data, meshes, scripts)
+- Preferably ASCII (for DCVS)
+  - Avoid mixing problem and mesh data
+- GUI not mandatory but possible
+  - Ok to have basic usage through GUI
+  - Advanced features through API
 
 </div>
 
@@ -1339,32 +1426,32 @@ WRITE_MESH laplace-square.vtk phi VECTOR dphidx dphidy 0
 
 ### FeenoX
 
--   Human-less production workflow
--   There are ASCII progress bars
-    -   Build matrix
-    -   Solve equations
-    -   Gradient recovery
--   Heartbeat:
+- Human-less production workflow
+- There are ASCII progress bars
+  - Build matrix
+  - Solve equations
+  - Gradient recovery
+- Heartbeat:
 
--   English self-evident ASCII input
-    -   Syntactically-sugared
+- English self-evident ASCII input
+  - Syntactically-sugared
 
-        -   Nouns are definitions
-        -   Verbs are instructions
+    - Nouns are definitions
+    - Verbs are instructions
 
-    -   Simple problems, simple inputs
+  - Simple problems, simple inputs
 
-    -   Similar problems, similar inputs
+  - Similar problems, similar inputs
 
-    -   Everything is an expression!
+  - Everything is an expression!
 
-    -   : $f(x)=\\frac{1}{2} \\cdot x^2$
+  - : $f(x)=\frac{1}{2} \cdot x^2$
 
-        ``` feenox
-        f(x) = 1/2 * x^2  
-        ```
+    ``` feenox
+    f(x) = 1/2 * x^2  
+    ```
 
-    -   Expansion of command line arguments
+  - Expansion of command line arguments
 
 </div>
 
@@ -1433,16 +1520,16 @@ $
 
 #### 3.2. Output
 
--   Clean output expected
--   Do not clutter the output with
-    -   ASCII art
-    -   Notices
-    -   Explanations
-    -   Page separators
--   Output should interpreted by both
-    -   A human
-    -   A computer
--   Open standards and well-documented formats should be preferred
+- Clean output expected
+- Do not clutter the output with
+  - ASCII art
+  - Notices
+  - Explanations
+  - Page separators
+- Output should interpreted by both
+  - A human
+  - A computer
+- Open standards and well-documented formats should be preferred
 
 </div>
 
@@ -1452,22 +1539,22 @@ $
 
 ### FeenoX
 
--   : output is completely defined by the user
--   : no `PRINT` no output
--   ASCII columns
-    -   `PRINT` & `PRINT_FUNCTION`
-    -   Gnuplot & compatible
-    -   Markdown/LaTeX tables
--   Post-processing formats
-    -   `.msh`
-    -   `.vtk`
-    -   `.vtu`:
-    -   `.hdf5`:
-    -   `.frd`: ?
--   Dumping of vectors & matrices
-    -   ASCII
-    -   PETSc binary
-    -   Octave (sparse)
+- : output is completely defined by the user
+- : no `PRINT` no output
+- ASCII columns
+  - `PRINT` & `PRINT_FUNCTION`
+  - Gnuplot & compatible
+  - Markdown/LaTeX tables
+- Post-processing formats
+  - `.msh`
+  - `.vtk`
+  - `.vtu`:
+  - `.hdf5`:
+  - `.frd`: ?
+- Dumping of vectors & matrices
+  - ASCII
+  - PETSc binary
+  - Octave (sparse)
 
 </div>
 
@@ -1501,7 +1588,7 @@ $ feenox wire.fee copper hex > copper-hex.md
 $
 ```
 
-| *n* |   FEM   |  Euler  | Relative difference \[%\] |
+| $n$ |   FEM   |  Euler  | Relative difference \[%\] |
 |:---:|:-------:|:-------:|:-------------------------:|
 |  1  | 45.8374 | 45.8448 |         0.0161707         |
 |  2  | 287.126 | 287.302 |         0.0611787         |
@@ -1529,13 +1616,13 @@ copper wire over hex mesh, frequencies in Hz
 
 <div class="column" width="45%">
 
--   Computation of NUREG-EPRI sample problem for
-    Environmentally-assisted fatigue in NPP piping
+- Computation of NUREG-EPRI sample problem for Environmentally-assisted
+  fatigue in NPP piping
 
--   Top is a table from a publication by a multi-billion dollar agency
--   Bottom is a PDF from FeenoX output piped through
-    -   AWK
-    -   
+- Top is a table from a publication by a multi-billion dollar agency
+- Bottom is a PDF from FeenoX output piped through
+  - AWK
+  - 
 
 </div>
 
@@ -1549,23 +1636,23 @@ copper wire over hex mesh, frequencies in Hz
 
 ### 4. Quality Assurance
 
--   Generic good software QA practices
-    -   Distributed version control system
-    -   Automated testing suites
-    -   User-reported bug tracking support
-    -   Signed releases
-    -   etc.
+- Generic good software QA practices
+  - Distributed version control system
+  - Automated testing suites
+  - User-reported bug tracking support
+  - Signed releases
+  - etc.
 
 #### 4.1. Reproducibility and traceability
 
--   Both the source and the documentation should be tracked with a DVCS
--   Repository should be accessible online
-    -   Might need credentials even for RO
--   Version reporting
-    -   Executables must allow `--version`
-    -   Libraries must provide an API call
--   The files needed to solve a problem should be simple & traceable by
-    a DVCS
+- Both the source and the documentation should be tracked with a DVCS
+- Repository should be accessible online
+  - Might need credentials even for RO
+- Version reporting
+  - Executables must allow `--version`
+  - Libraries must provide an API call
+- The files needed to solve a problem should be simple & traceable by a
+  DVCS
 
 </div>
 
@@ -1575,15 +1662,15 @@ copper wire over hex mesh, frequencies in Hz
 
 ### FeenoX
 
--   Hosted on Github (`git`)
-    -   Previously on Bitbucket (`hg`)
-    -   Previously on Launchpad (`bzr`)
-    -   Previously on-premise (`svn`)
--   <https://github.com/seamplex/feenox>
--   <https://seamplex.com/feenox>
--   Mailing list (Google group)
--   Build a community!
-    -   Code of conduct
+- Hosted on Github (`git`)
+  - Previously on Bitbucket (`hg`)
+  - Previously on Launchpad (`bzr`)
+  - Previously on-premise (`svn`)
+- <https://github.com/seamplex/feenox>
+- <https://seamplex.com/feenox>
+- Mailing list (Google group)
+- Build a community!
+  - Code of conduct
 
 ``` terminal
 $ feenox
@@ -1595,11 +1682,11 @@ usage: feenox [options] inputfile [replacement arguments]
 $
 ```
 
--   `-v`/`--version`: copyright notice
+- `-v`/`--version`: copyright notice
 
--   `-V`/`--versions`: linked libraries
+- `-V`/`--versions`: linked libraries
 
--   : inputs from M4
+- : inputs from M4
 
 </div>
 
@@ -1613,23 +1700,23 @@ $
 
 #### 4.2. Automated testing
 
--   A mean to test the code is mandatory
--   After each change
-    -   Check for regressions
-    -   Problems with already-computed solutions
-    -   Different from verification
--   The compiler should not issue warnings
--   Dynamic memory allocation checks are recommended
--   Good practices are suggested
-    -   Unit testing
-    -   Continuous integration
-    -   Test coverage analysis
+- A mean to test the code is mandatory
+- After each change
+  - Check for regressions
+  - Problems with already-computed solutions
+  - Different from verification
+- The compiler should not issue warnings
+- Dynamic memory allocation checks are recommended
+- Good practices are suggested
+  - Unit testing
+  - Continuous integration
+  - Test coverage analysis
 
 #### 4.3. Bug reporting and tracking
 
--   Users should be able to report bugs
-    -   A task should be created for each report
-    -   Address and document
+- Users should be able to report bugs
+  - A task should be created for each report
+  - Address and document
 
 </div>
 
@@ -1639,36 +1726,36 @@ $
 
 ### FeenoX
 
--   Standard test suite
+- Standard test suite
 
-    ``` terminal
-    $ make check
-    Making check in src
-    [...]
-    PASS: tests/trig.sh
-    PASS: tests/vector.sh
-    =============================================
-    Testsuite summary for feenox v0.1.12-gb9a534f
-    =============================================
-    # TOTAL: 26
-    # PASS:  25
-    # SKIP:  0
-    # XFAIL: 1
-    # FAIL:  0
-    # XPASS: 0
-    # ERROR: 0
-    =============================================
-    $
-    ```
+  ``` terminal
+  $ make check
+  Making check in src
+  [...]
+  PASS: tests/trig.sh
+  PASS: tests/vector.sh
+  =============================================
+  Testsuite summary for feenox v0.1.12-gb9a534f
+  =============================================
+  # TOTAL: 26
+  # PASS:  25
+  # SKIP:  0
+  # XFAIL: 1
+  # FAIL:  0
+  # XPASS: 0
+  # ERROR: 0
+  =============================================
+  $
+  ```
 
--   Periodic `valgrind` runs
+- Periodic `valgrind` runs
 
--   Integration tests:
+- Integration tests:
 
--   CI & test coverage:
+- CI & test coverage:
 
--   Github issue tracker
--   Branching & merging procedures:
+- Github issue tracker
+- Branching & merging procedures:
 
 </div>
 
@@ -1682,23 +1769,23 @@ $
 
 #### 4.4 Verification
 
--   Code must be always verified
--   Check it solves **right the equations**
-    -   MES (mandatory)
-    -   MMS (recommended)
--   One test case has to be added to the automated testing
--   Third-party verification should be allowed
--   Per-problem documentation
+- Code must be always verified
+- Check it solves **right the equations**
+  - MES (mandatory)
+  - MMS (recommended)
+- One test case has to be added to the automated testing
+- Third-party verification should be allowed
+- Per-problem documentation
 
 #### 4.5. Validation
 
--   Code should be validated as required
--   Check it solves **the right equations**
-    -   Against experiments
-    -   Against other codes
--   Third-party validation should be allowed
--   Per-application/industry documentation
-    -   Procedures following standards
+- Code should be validated as required
+- Check it solves **the right equations**
+  - Against experiments
+  - Against other codes
+- Third-party validation should be allowed
+- Per-application/industry documentation
+  - Procedures following standards
 
 </div>
 
@@ -1708,26 +1795,26 @@ $
 
 ### FeenoX
 
--   There is a V&V report for the industrial human-less workflow project
+- There is a V&V report for the industrial human-less workflow project
 
-    -   Medical devices
-    -   Based on ASME V&V 40
+  - Medical devices
+  - Based on ASME V&V 40
 
--   There is a lot to do!
+- There is a lot to do!
 
--   MES
+- MES
 
-    -   Set of well-known benchmarks
-    -   NAFEMS, IAEA, etc.
+  - Set of well-known benchmarks
+  - NAFEMS, IAEA, etc.
 
--   MMS
+- MMS
 
-    -   Everything is an expression
-    -   Parametric runs
-    -   `MESH_INTEGRATE` allows to compute *L*<sub>2</sub> norms
-        directly in the `.fee`
+  - Everything is an expression
+  - Parametric runs
+  - `MESH_INTEGRATE` allows to compute $L_2$ norms directly in the
+    `.fee`
 
--   TL;DR:
+- TL;DR:
 
 </div>
 
@@ -1741,20 +1828,20 @@ $
 
 #### 4.6. Documentation
 
--   Documentation should be complete
-    -   User manual
-        -   Tutorial
-        -   Reference
-    -   Developer guide
--   Quick reference cards, video tutorials, etc. not mandatory but
-    recommended
--   Non-trivial mathematics and methods
-    -   Explained
-    -   Documented
--   Should be available as hard copies and mobile-friendly online
--   Clear licensing scheme for the documentation
-    -   People extending the functionality ought to be able to document
-        their work
+- Documentation should be complete
+  - User manual
+    - Tutorial
+    - Reference
+  - Developer guide
+- Quick reference cards, video tutorials, etc. not mandatory but
+  recommended
+- Non-trivial mathematics and methods
+  - Explained
+  - Documented
+- Should be available as hard copies and mobile-friendly online
+- Clear licensing scheme for the documentation
+  - People extending the functionality ought to be able to document
+    their work
 
 </div>
 
@@ -1762,33 +1849,59 @@ $
 
 ### FeenoX
 
--   FeenoX is not compact!
-    -   Even I have to check the reference
--   Commented sources:
-    -   Keywords
-    -   Functions
-    -   Functionals
-    -   Variables
-    -   Material properties
-    -   Boundary conditions
-    -   Solutions
--   Shape functions:
--   Gradient recovery:
--   Mathematical models:
+- FeenoX is not compact!
+  - Even I have to check the reference
+- Commented sources:
+  - Keywords
+  - Functions
+  - Functionals
+  - Variables
+  - Material properties
+  - Boundary conditions
+  - Solutions
+- Shape functions:
+- Gradient recovery:
+- Mathematical models:
 
--   Code is GPLv3+
--   Documentation is GFDLv1.3+
+- Code is GPLv3+
+- Documentation is GFDLv1.3+
+
+</div>
+
+</div>
+
+## Conclusions
+
+<div class="columns">
+
+<div class="column" width="60%">
+
+- 2020s: **cloud-first** approach (not just cloud-friendly)
+- FeenoX is to FEA what Markdown is to documentation
+- FeenoX is (so far) the only tool that fulfills 100% a fictitious SRS:
+  - Free and open source (GPLv3+)
+  - No recompilation needed
+  - Cloud-first and web friendly
+  - Human-less workflow
+- philosophy: “do one thing well”
+
+- Documentation
+  - <https://www.seamplex.com/feenox/doc>
+  - <https://www.seamplex.com/feenox/examples>
+  - Come up with a nice logo
+- Build a community!
+  - <https://github.com/seamplex/feenox/discussions>
+
+</div>
+
+<div class="column" width="40%">
+
+![](clouds.jpg)
+
+. . .
+
+<https://www.youtube.com/watch?v=Q-lKK4A2OzA>
 
 </div>
 
 </div>
-
-## Conclusions—FeenoX…
-
--   is to FEA what Markdown is to documentation
--   is (so far) the only tool that fulfills 100% a fictitious SRS:
-    -   Free and open source (GPLv3+)
-    -   No recompilation needed
-    -   Cloud-first and web friendly
-    -   Human-less workflow
--   follows the philosophy: “do one thing well”
