@@ -236,6 +236,7 @@ a fictitious & imaginary "Request for Quotation" for a computational tool:
 ### FeenoX Software Design Specifications {.example}
 
  * A fictitious & imaginary tender applying to the SRS addressing each section.
+ * <https://www.seamplex.com/feenox/doc/>
 
 
 
